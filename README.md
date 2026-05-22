@@ -7,7 +7,7 @@ HomeNest is a full-stack Laravel web application designed to help users browse a
 ## Demo
 
 Watch the full demo here:
-👉 https://youtu.be/37pqxj_YYA8
+👉 [https://youtu.be/37pqxj_YYA8](https://youtu.be/kYLblpUzFVs)
 
 ---
 

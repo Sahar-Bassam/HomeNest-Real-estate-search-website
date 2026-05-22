@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+body {
+  @apply bg-gray-100 text-gray-600;
+}
+body.h1 {
+  @apply text-6xl font-bold text-white flex items-center justify-center ;
+}
+
+h2 {
+  @apply text-xl font-bold my-4;
+}
+h3 {
+  position:block;
+}
+ul {
+  @apply my-10;
+}
+
+header {
+  @apply bg-white;
+
+  nav {
+    @apply flex items-center gap-5 max-w-screen-lg px-12 py-4 mx-auto;
+    height: 90px; 
+  }
+  h1 {
+    @apply mr-auto;
+  }
+}
+
+form {
+  @apply max-w-screen-sm;
+}
+input, select, textarea {
+  @apply block w-full mt-2 mb-4 p-2;
+}
+
+.container {
+  @apply max-w-screen-lg mx-auto px-2 py-8;
+}
+
+.card {
+  @apply bg-white rounded border border-gray-300 px-3 py-4 flex flex-col items-center;
+}
+
+.card-img {
+  @apply w-full h-48 object-cover rounded mb-3;
+}
+
+.highlight {
+  @apply border-l-4 border-l-yellow-500;
+}
+
+body.welcome {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       
+  align-items: center;           
+  text-align: center;
+  color: white;
+  overflow: hidden;              
+}
+
+body.welcome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../css/luxury.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(1.5px) brightness(0.5);
+  z-index: -1;  
+}
+
+body.welcome h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+body.welcome p {
+  max-width: 500px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+body.welcome .btn {
+  @apply rounded px-5 py-3 bg-yellow-500 hover:bg-yellow-600 text-black text-lg;
+  margin-top: 2rem;
+}
+
+.btn {
+  @apply rounded px-3 py-2 text-white bg-yellow-500 hover:bg-gray-200 hover:text-black;
+}
+.logo {
+  height: 165px;
+  width: 165px;
+}
+
+.av-prop {
+  font-size: 2.7rem;
+  font-family: 'TikTok Sans', sans-serif;
+  font-weight: 200;
+}
+
+input, textarea , select{
+  background: white;
+}
